@@ -3,3 +3,7 @@
     height: 50px;
     margin: 0 5px;
 }
+.titulo{
+    font-weight: bold;
+    text-align: center;
+}
