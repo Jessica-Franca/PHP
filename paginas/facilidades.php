@@ -21,14 +21,14 @@
 
     <?php
     $FacilidadesData = [
-        ["PAGUE PELO PIX", "Ganhe 5% OFF em pagamentos via PIX", "bi bi-x-diamond-fill fs-1"],
-        ["CARTÃO DE CREDITO", "Parcele em até 6x sem Juros", "bi bi-credit-card-2-back-fill fs-1"],
-        ["SUSTENTABILIDADE", "Diverção responsável que respeita o meio ambiente", "bi bi-globe-europe-africa fs-1"]
+        ["NOSSA EQUIPE", "Conheça nossos desenvolvedores", "bi bi-people-fill fs-1"],
+        ["NOSSA LINGUAGEM", "Saiba quais linguagens de programação utilizamos nesse projeto", "bi bi-regex fs-1"],
+        ["GITHUB", "Analise de perto nosso código", "bi bi-github fs-1"]
     ];
     ?>
     <section class="pb-4 bg-black text-bg-dark">
 
-        <h2 class="text-center">Conheça nossas facilidades</h2>
+        <h2 class="text-center">Conheça também:</h2>
 
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
             <?php foreach ($FacilidadesData as $facilidades): ?>

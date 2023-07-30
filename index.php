@@ -19,7 +19,7 @@
         "./imagens\undraw_People_re_8spw.png"
     ];
     ?>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=""
                 aria-label="Slide 1"></button>
@@ -72,41 +72,6 @@
                         </h5>
                         <p class="card-text ">
                             <?php echo $cartao[2]; ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        <?php endforeach; ?>
-    </div>
-
-
-    <!-- Example Code cards com eventos-->
-    <h2 class="text-center pb-4">Eventos que estão bombando: </h2>
-    <?php
-    $EventosData = [
-        ["Aniversarios", "./img/aniversario.png", "Algum texto de exemplo rápido para criar no título do cartão", "EU 13.00"],
-        ["Comfraternização de empresa", "./img/campo2.jpeg", "Algum texto de exemplo rápido para criar no título do cartão", "EU 14.00"],
-        ["Dia dos namorados", "./img/campo3.jpeg", "Algum texto de exemplo rápido para criar no título do cartão", "EU 15.00"],
-        ["Card title 4", "./img/campo4.jpeg", "Algum texto de exemplo rápido para criar no título do cartão", "EU 16.00"]
-    ];
-    ?>
-
-    <div class="container row mx-auto g-4">
-        <?php foreach ($EventosData as $evento): ?>
-            <div class="col-12 col-md-6 col-xxl-4 pb-4">
-                <div class="card">
-                    <img src="<?php echo $evento[1]; ?>" class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" />
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <?php echo $evento[0]; ?>
-                        </h5>
-                        <p class="card-text">
-                            <?php echo $evento[2]; ?>
-                        </p>
-                        <p>
-                            <?php echo $evento[3]; ?>
                         </p>
                     </div>
                 </div>

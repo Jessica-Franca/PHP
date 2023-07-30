@@ -23,7 +23,7 @@
     <div class="container pb-4 mx-auto g-4">
         <form class="border border-secondary m-3 p-3 text-center div-novidades mx-auto">
             <h5>
-                Quer receber nossas novidades e promoções exclusivas? Cadastre-se!
+                Quer conhecer mais do nosso trabalho? Cadastre-se!
             </h5>
 
             <div class="input-group my-3">

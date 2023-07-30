@@ -12,11 +12,16 @@
         <form action="processar_solicitacao.php" method="POST">
             <h1>Solicitação de Férias e Décimo Terceiro</h1><br>
 
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Nome completo</label>
-                <input type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="Escreva seu nome completo" required><br>
-            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" class="form-control" id="matricula" placeholder="Digite a matrícula" required>
+                </div>
+                <div class="col-md-9">
+                    <label for="nome">Nome Funcionario</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite a matricula para o nome aparecer." disabled required>
+                </div>
+            </div><br>
 
             <fieldset class="row mb-3">
                 <legend class="col-form-label col-sm-2 pt-0">Deseja adiantar o décimo terceiro salário?</legend>
@@ -83,6 +88,33 @@
             <p><a href="/index.php">Voltar para Home</a></p>
         </form>
     </div>
+
+    <script>
+        const matriculaInput = document.getElementById('matricula');
+        const nomeInput = document.getElementById('nome');
+
+        matriculaInput.addEventListener('input', function () {
+            // Simulando a obtenção do nome da pessoa com base na matrícula digitada
+            const nomeDaPessoa = obterNomeDaPessoa(this.value);
+
+            // Preenche o campo "Nome da Pessoa" com o valor obtido
+            nomeInput.value = nomeDaPessoa;
+        });
+
+        // Função para obter o nome da pessoa com base na matrícula (simulação)
+        function obterNomeDaPessoa(matricula) {
+            // Aqui você pode realizar uma consulta ao banco de dados ou utilizar uma API para obter o nome da pessoa
+            // Neste exemplo, vamos retornar um valor fixo para fins de demonstração
+            const nomes = {
+                '012345': 'Antonio da silva',
+                '111213': 'Raquele Pereira',
+                '171819': 'Vitor Santos',
+            };
+
+            return nomes[matricula] || '';
+        }
+
+    </script>
 
 
     <?php include_once('C:\Users\Jéssica\Documents\Work Pessoal\PHP_SistemaRH\paginasIndex\footer.php'); ?>
