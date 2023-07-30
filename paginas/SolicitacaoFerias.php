@@ -2,11 +2,11 @@
 <html lang="pt">
 
 <head>
-    <?php include_once('head.php'); ?>
+    <?php include_once('C:\Users\Jéssica\Documents\Work Pessoal\PHP_SistemaRH\paginasIndex\head.php'); ?>
 </head>
 
 <body>
-    <?php include_once('navbar.php'); ?><br>
+    <?php include_once('C:\Users\Jéssica\Documents\Work Pessoal\PHP_SistemaRH\paginasIndex\navbar.php'); ?><br>
 
     <div class="container">
         <form action="processar_solicitacao.php" method="POST">
@@ -85,7 +85,7 @@
     </div>
 
 
-    <?php include_once('footer.php'); ?>
+    <?php include_once('C:\Users\Jéssica\Documents\Work Pessoal\PHP_SistemaRH\paginasIndex\footer.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

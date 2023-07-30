@@ -2,11 +2,11 @@
 <html lang="pt">
 
 <head>
-    <?php include_once('./paginas/head.php'); ?>
+    <?php include_once('./paginasindex/head.php'); ?>
 </head>
 
 <body>
-    <?php include_once('./paginas/navbar.php'); ?>
+    <?php include_once('./paginasindex/navbar.php'); ?>
 
 
 
@@ -14,9 +14,9 @@
     <!-- Example Code Passar imagem automatica -->
     <?php
     $imagens = [
-        "./img/home1.png",
-        "./img/home2.webp",
-        "./img/home3.jpeg"
+        "./imagens\undraw_Contact_us_re_4qqt.png",
+        "./imagens\undraw_Investor_update_re_qnuu.png",
+        "./imagens\undraw_People_re_8spw.png"
     ];
     ?>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -114,7 +114,7 @@
         <?php endforeach; ?>
     </div>
 
-    <?php include_once('./paginas/footer.php'); ?>
+    <?php include_once('./paginasindex/footer.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
