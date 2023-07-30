@@ -26,7 +26,7 @@
                         <a class="nav-link" href="/paginas/SolicitacaoFerias.php">Férias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hierarquia</a>
+                        <a class="nav-link" href="/paginas/hierarquia.php">Hierarquia</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link3</a>

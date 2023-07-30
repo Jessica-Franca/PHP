@@ -16,38 +16,8 @@
 </head>
 
 <body>
-    <!-- Example Code facilidades-->
-    <?php
-    $FacilidadesData = [
-        ["PAGUE PELO PIX", "Ganhe 5% OFF em pagamentos via PIX", "bi bi-x-diamond-fill fs-1"],
-        ["CARTÃO DE CREDITO", "Parcele em até 6x sem Juros", "bi bi-credit-card-2-back-fill fs-1"],
-        ["SUSTENTABILIDADE", "Diverção responsável que respeita o meio ambiente", "bi bi-globe-europe-africa fs-1"]
-    ];
-    ?>
-    <section class="pb-4 bg-black text-bg-dark">
-
-        <h2 class="text-center">Conheça nossas facilidades</h2>
-
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
-            <?php foreach ($FacilidadesData as $facilidades): ?>
-
-                <div class="div-facilidades d-flex align-items-center">
-                    <div><i class="<?php echo $facilidades[2]; ?>"></i></div>
-                    <div>
-                        <div class="ms-3 mb-1">
-                            <?php echo $facilidades[0]; ?>
-                        </div>
-                        <div class="texto-menor ms-3">
-                            <?php echo $facilidades[1]; ?>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
-
-
-
-    </section>
+    <!-- Code facilidades-->
+    <?php include_once('paginas\facilidades.php'); ?>
 
     <!-- Example Code cadastro para receber notificalies-->
     <div class="container pb-4 mx-auto g-4">
